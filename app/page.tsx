@@ -1,37 +1,9 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
-  useEffect(() => {
-    // Menu Mobile
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-
-    if (burger && nav) {
-      const toggleMenu = () => {
-        nav.classList.toggle('active');
-        burger.classList.toggle('fa-times');
-        burger.classList.toggle('fa-bars');
-      };
-      
-      burger.addEventListener('click', toggleMenu);
-
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          nav.classList.remove('active');
-          burger.classList.remove('fa-times');
-          burger.classList.add('fa-bars');
-        });
-      });
-
-      return () => {
-        burger.removeEventListener('click', toggleMenu);
-      };
-    }
-  }, []);
-
   useEffect(() => {
     // Scroll Reveal
     function reveal() {
@@ -117,30 +89,14 @@ export default function Home() {
 
   return (
     <>
-      <header>
-          <div className="container">
-              <nav>
-                  <div className="logo"><img src="https://i.imgur.com/a7mZ64Q.png" alt="DOMUS Logo" /></div>
-                  <ul className="nav-links">
-                      <li><a href="#hero">Início</a></li>
-                      <li><a href="#servicos">Serviços</a></li>
-                      <li><a href="#galeria">Portfólio</a></li>
-                      <li><a href="#depoimentos">Clientes</a></li>
-                      <li><a href="#contato" className="btn btn-primary">Orçamento</a></li>
-                  </ul>
-                  <div className="burger"><i className="fas fa-bars"></i></div>
-              </nav>
-          </div>
-      </header>
-
       <section id="hero">
           <div className="container">
               <div className="hero-content reveal">
                   <h1>Transformamos Ambientes,<br />Elevamos Padrões.</h1>
                   <p>Especialistas em reformas de alto padrão, vidraçaria, móveis planejados, climatização e projetos 3D. A solidez que sua obra precisa com o design que você sonha.</p>
                   <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-                      <a href="#contato" className="btn btn-primary">Solicitar Orçamento</a>
-                      <a href="#galeria" className="btn btn-outline">Ver Projetos</a>
+                      <Link href="/contato" className="btn btn-primary">Solicitar Orçamento</Link>
+                      <Link href="/portfolio" className="btn btn-outline">Ver Projetos</Link>
                   </div>
               </div>
           </div>
@@ -170,7 +126,7 @@ export default function Home() {
           </div>
       </section>
 
-      <section id="servicos" className="section-padding">
+      <section id="servicos-home" className="section-padding">
           <div className="container">
               <div className="section-title reveal">
                   <span>O que fazemos</span>
@@ -178,34 +134,58 @@ export default function Home() {
                   <p>Centralize sua reforma com uma única empresa. Gestão, execução e acabamento.</p>
               </div>
               <div className="services-grid">
-                  <div className="service-card reveal">
-                      <div className="icon-box"><i className="fas fa-drafting-compass"></i></div>
-                      <h3>Projetos & Design 3D</h3>
-                      <ul className="service-list">
-                          <li><i className="fas fa-check"></i> Visualização realista</li>
-                          <li><i className="fas fa-check"></i> Otimização de espaços</li>
-                          <li><i className="fas fa-check"></i> Compatibilização técnica</li>
+                  
+                  {/* Service Card 1: Vidraçaria */}
+                  <Link href="/contato?servico=Vidraçaria" className="home-service-card reveal" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                      <div className="icon-box"><i className="fas fa-layer-group"></i></div>
+                      <h3>Vidraçaria</h3>
+                      <ul className="home-service-list">
+                          <li><i className="fas fa-check"></i> Escritórios em vidro</li>
+                          <li><i className="fas fa-check"></i> Portas e janelas</li>
+                          <li><i className="fas fa-check"></i> Sacadas e fachadas</li>
+                          <li><i className="fas fa-check"></i> Espelhos decorativos</li>
                       </ul>
-                  </div>
-                  <div className="service-card reveal">
-                      <div className="icon-box"><i className="fas fa-hammer"></i></div>
-                      <h3>Reformas Completas</h3>
-                      <ul className="service-list">
-                          <li><i className="fas fa-check"></i> Vidraçaria</li>
-                          <li><i className="fas fa-check"></i> Climatização</li>
-                          <li><i className="fas fa-check"></i> Pinturas e efeitos</li>
-                          <li><i className="fas fa-check"></i> Gesso e Iluminação</li>
-                      </ul>
-                  </div>
-                  <div className="service-card reveal">
+                  </Link>
+
+                  {/* Service Card 2: Móveis Planejados */}
+                  <Link href="/contato?servico=Móveis%20Planejados" className="home-service-card reveal" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
                       <div className="icon-box"><i className="fas fa-couch"></i></div>
                       <h3>Móveis Planejados</h3>
-                      <ul className="service-list">
+                      <ul className="home-service-list">
                           <li><i className="fas fa-check"></i> Marcenaria Sob Medida</li>
                           <li><i className="fas fa-check"></i> Acabamentos Premium</li>
                           <li><i className="fas fa-check"></i> Design Exclusivo</li>
+                          <li><i className="fas fa-check"></i> Visualização 3D do projeto</li>
                       </ul>
-                  </div>
+                  </Link>
+
+                  {/* Service Card 3: Climatização */}
+                  <Link href="/contato?servico=Climatização" className="home-service-card reveal" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                      <div className="icon-box"><i className="fas fa-snowflake"></i></div>
+                      <h3>Climatização</h3>
+                      <ul className="home-service-list">
+                          <li><i className="fas fa-check"></i> Instalação de ar-condicionado</li>
+                          <li><i className="fas fa-check"></i> Manutenção de ar-condicionado</li>
+                          <li><i className="fas fa-check"></i> Instalação de infraestrutura</li>
+                          <li><i className="fas fa-check"></i> PMOC</li>
+                      </ul>
+                  </Link>
+
+                  {/* Service Card 4: Projetos e Reformas */}
+                  <Link href="/contato?servico=Reforma" className="home-service-card reveal" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                      <div className="icon-box"><i className="fas fa-hard-hat"></i></div>
+                      <h3>Projetos e Reformas Completas</h3>
+                      <ul className="home-service-list">
+                          <li><i className="fas fa-check"></i> Pinturas e efeitos</li>
+                          <li><i className="fas fa-check"></i> Gesso e drywall</li>
+                          <li><i className="fas fa-check"></i> Projetos de iluminação</li>
+                          <li><i className="fas fa-check"></i> Projeto de ambiente completo</li>
+                      </ul>
+                  </Link>
+
+              </div>
+              <div style={{ textAlign: 'center', marginTop: '40px' }}>
+                  <Link href="/servicos" className="btn btn-outline" style={{ color: 'var(--primary)', borderColor: 'var(--primary)' }}>Ver todos os serviços</Link>
               </div>
           </div>
       </section>
@@ -249,35 +229,33 @@ export default function Home() {
           </div>
       </section>
 
-      <section id="galeria">
-          <div className="gallery-grid">
-              <div className="gallery-item">
-                  <img src="https://i.imgur.com/OzJsv4o.png" alt="Projeto 1" />
-                  <div className="gallery-overlay">
-                      <h4>Portas Pivotante</h4>
-                      <p>Vidros temperados</p>
-                  </div>
+      <section id="galeria" style={{ display: 'flex', width: '100%', overflow: 'hidden' }}>
+          <div className="gallery-item" style={{ flex: 1, minWidth: '25%', height: '350px' }}>
+              <img src="https://i.imgur.com/OzJsv4o.png" alt="Projeto 1" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <div className="gallery-overlay">
+                  <h4 style={{ fontSize: '1.2rem' }}>Portas Pivotantes</h4>
+                  <p style={{ fontSize: '0.9rem' }}>Vidros temperados</p>
               </div>
-              <div className="gallery-item">
-                  <img src="https://i.imgur.com/I71dlg3.png" alt="Projeto 2" />
-                  <div className="gallery-overlay">
-                      <h4>Escritório de Advocacia</h4>
-                      <p>Reforma Completa</p>
-                  </div>
+          </div>
+          <div className="gallery-item" style={{ flex: 1, minWidth: '25%', height: '350px' }}>
+              <img src="https://i.imgur.com/I71dlg3.png" alt="Projeto 2" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <div className="gallery-overlay">
+                  <h4 style={{ fontSize: '1.2rem' }}>Escritório</h4>
+                  <p style={{ fontSize: '0.9rem' }}>Reforma Completa</p>
               </div>
-              <div className="gallery-item">
-                  <img src="https://i.imgur.com/hC5oegz.png" alt="Projeto 3" />
-                  <div className="gallery-overlay">
-                      <h4>Instalações e manutenções</h4>
-                      <p>Climatização</p>
-                  </div>
+          </div>
+          <div className="gallery-item" style={{ flex: 1, minWidth: '25%', height: '350px' }}>
+              <img src="https://i.imgur.com/hC5oegz.png" alt="Projeto 3" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <div className="gallery-overlay">
+                  <h4 style={{ fontSize: '1.2rem' }}>Climatização</h4>
+                  <p style={{ fontSize: '0.9rem' }}>Manutenção preventiva</p>
               </div>
-              <div className="gallery-item">
-                  <img src="https://i.imgur.com/SlbEPlj.png" alt="Projeto 4" />
-                  <div className="gallery-overlay">
-                      <h4>Banheiros</h4>
-                      <p>Box + Espelho</p>
-                  </div>
+          </div>
+          <div className="gallery-item" style={{ flex: 1, minWidth: '25%', height: '350px' }}>
+              <img src="https://i.imgur.com/SlbEPlj.png" alt="Projeto 4" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <div className="gallery-overlay">
+                  <h4 style={{ fontSize: '1.2rem' }}>Banheiros</h4>
+                  <p style={{ fontSize: '0.9rem' }}>Box e Espelhos</p>
               </div>
           </div>
       </section>
@@ -325,136 +303,6 @@ export default function Home() {
               </div>
           </div>
       </section>
-
-      <section id="contato" className="section-padding">
-          <div className="container">
-              <div className="section-title reveal">
-                  <span>Contato</span>
-                  <h2>Vamos falar sobre seu projeto?</h2>
-              </div>
-              <div className="contact-wrapper reveal">
-                  <div className="contact-info">
-                      <div>
-                          <h3>Informações de Contato</h3>
-                          <p style={{ opacity: 0.8, marginBottom: '30px' }}>Preencha o formulário e nossa equipe técnica entrará em contato em até 24 horas.</p>
-                          
-                          <div className="info-item">
-                              <i className="fas fa-map-marker-alt"></i>
-                              <div>
-                                  <h5>Endereço</h5>
-                                  <p>Av. Presidente Eurico Gaspar Dultra, 510 - Recife, PE</p>
-                              </div>
-                          </div>
-                          <div className="info-item">
-                              <i className="fas fa-phone-alt"></i>
-                              <div>
-                                  <h5>Telefone</h5>
-                                  <p>(81) 99519-4622</p>
-                              </div>
-                          </div>
-                          <div className="info-item">
-                              <i className="fas fa-envelope"></i>
-                              <div>
-                                  <h5>E-mail</h5>
-                                  <p>suportedomus25@gmail.com</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div>
-                          <a href="https://www.instagram.com/domus_oficiall?igsh=cWVhMGIxMWI3dGcw" target="_blank" rel="noreferrer" style={{ color: 'white', marginRight: '15px' }}><i className="fab fa-instagram fa-lg"></i></a>
-                          <a href="https://www.facebook.com/profile.php?id=61582030342127" target="_blank" rel="noreferrer" style={{ color: 'white', marginRight: '15px' }}><i className="fab fa-facebook fa-lg"></i></a>
-                          <a href="#" style={{ color: 'white' }}><i className="fab fa-linkedin fa-lg"></i></a>
-                      </div>
-                  </div>
-                  <div className="contact-form">
-                      <form onSubmit={(e) => { e.preventDefault(); enviarParaWhatsapp(); }}>
-                          <div className="form-group">
-                              <label>Nome Completo</label>
-                              <input type="text" id="form-nome" className="form-control" placeholder="Seu nome" required />
-                          </div>
-                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                              <div className="form-group">
-                                  <label>E-mail</label>
-                                  <input type="email" id="form-email" className="form-control" placeholder="Seu e-mail" required />
-                              </div>
-                              <div className="form-group">
-                                  <label>Telefone</label>
-                                  <input type="tel" id="form-tel" className="form-control" placeholder="(00) 00000-0000" required />
-                              </div>
-                          </div>
-                          <div className="form-group">
-                              <label>Assunto</label>
-                              <select id="form-assunto" className="form-control">
-                                  <option>Orçamento de Reforma</option>
-                                  <option>Móveis Planejados</option>
-                                  <option>Vidraçaria</option>
-                                  <option>Climatização</option>
-                                  <option>Projeto 3D</option>
-                                  <option>Outros</option>
-                              </select>
-                          </div>
-                          <div className="form-group">
-                              <label>Mensagem</label>
-                              <textarea id="form-msg" className="form-control" placeholder="Descreva brevemente seu projeto..." required></textarea>
-                          </div>
-                          <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Enviar Mensagem</button>
-                      </form>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <footer>
-          <div className="container">
-              <div className="footer-top">
-                  <div className="footer-grid">
-                      <div className="footer-brand">
-                          <img src="https://i.imgur.com/a7mZ64Q.png" alt="DOMUS Logo" />
-                          <p>Construindo sonhos com bases sólidas. Sua parceira definitiva em engenharia e design de interiores.</p>
-                          <div className="social-links">
-                              <a href="https://www.instagram.com/domus_oficiall?igsh=cWVhMGIxMWI3dGcw" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
-                              <a href="https://www.facebook.com/profile.php?id=61582030342127" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a>
-                              <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                          </div>
-                      </div>
-                      <div className="footer-col">
-                          <h4>Empresa</h4>
-                          <ul>
-                              <li><a href="#hero">Sobre Nós</a></li>
-                              <li><a href="#galeria">Nossos Projetos</a></li>
-                              <li><a href="#depoimentos">Depoimentos</a></li>
-                              <li><a href="#contato">Trabalhe Conosco</a></li>
-                          </ul>
-                      </div>
-                      <div className="footer-col">
-                          <h4>Serviços</h4>
-                          <ul>
-                              <li><a href="#">Reformas</a></li>
-                              <li><a href="#">Móveis planejados</a></li>
-                              <li><a href="#">Projetos de Interiores</a></li>
-                              <li><a href="#">Vidraçaria Especializada</a></li>
-                              <li><a href="#">Climatização</a></li>
-                          </ul>
-                      </div>
-                      <div className="footer-col">
-                          <h4>Atendimento</h4>
-                          <ul>
-                              <li>Seg - Sex: 8h às 17h</li>
-                              <li>Sáb: 8h às 12h</li>
-                              <li>Domingo: Fechado</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div className="copyright">
-              <p>&copy; 2023 DOMUS Engenharia e Design. Todos os direitos reservados.</p>
-          </div>
-      </footer>
-
-      <a href="https://wa.me/5581995194622" className="whatsapp-float" target="_blank" rel="noreferrer">
-          <i className="fab fa-whatsapp"></i>
-      </a>
     </>
   );
 }
