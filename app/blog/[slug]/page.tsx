@@ -70,7 +70,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             dangerouslySetInnerHTML={{ __html: post.content }} 
           />
           
-          <div style={{ marginTop: '50px', paddingTop: '30px', borderTop: '1px solid #e5e7eb', display: 'flex', justifyContent: 'center' }}>
+          <div style={{ marginTop: '50px', paddingTop: '30px', borderTop: '1px solid #e5e7eb', display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+            <Link href="/contato" className="btn btn-primary" style={{ padding: '12px 24px', display: 'inline-block', borderRadius: '8px', fontWeight: 'bold', transition: 'all 0.3s ease' }}>
+               <i className="fas fa-file-invoice-dollar" style={{ marginRight: '8px' }}></i> Solicitar Orçamento
+            </Link>
             <Link href="/blog" className="btn btn-outline" style={{ color: 'var(--primary)', borderColor: 'var(--primary)', padding: '12px 24px', display: 'inline-block', borderRadius: '8px', fontWeight: 'bold', transition: 'all 0.3s ease' }}>
                <i className="fas fa-arrow-left" style={{ marginRight: '8px' }}></i> Voltar para os Artigos
             </Link>

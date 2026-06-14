@@ -211,5 +211,110 @@ export const blogPosts: BlogPost[] = [
       </ul>
       <p>Para qualquer projeto exigente, a DOMUS tem as melhores <strong>soluções em vidro</strong>.</p>
     `
+  },
+  {
+    slug: 'vantagens-moveis-planejados-recife-pe',
+    title: 'Vantagens de Investir em Móveis Planejados em Recife-PE para Seu Apartamento',
+    excerpt: 'Descubra por que os móveis planejados em Recife-PE são a melhor escolha para valorizar seu imóvel, otimizar espaços e garantir um design exclusivo e duradouro.',
+    date: '2023-11-20',
+    keywords: ['Móveis planejados em Recife-PE', 'Móveis sob medida Recife', 'Marcenaria em Recife-PE', 'Design de Interiores Recife'],
+    imageUrl: 'https://i.imgur.com/erSDNc2.jpeg',
+    content: `
+      <h2>Por Que Fazer Móveis Planejados em Recife-PE?</h2>
+      <p>Investir em <strong>móveis planejados em Recife-PE</strong> é a decisão mais inteligente para quem busca aliar beleza, funcionalidade e aproveitamento total dos espaços. Seja em um apartamento em Boa Viagem ou em uma casa na Zona Norte, um projeto sob medida transforma qualquer ambiente.</p>
+
+      <h3>Valorização do Imóvel e Otimização de Espaços</h3>
+      <p>A personalização é o principal diferencial da nossa <strong>marcenaria em Recife-PE</strong>. Diferente dos móveis modulares tradicionais, os <strong>móveis planejados</strong> se encaixam milimetricamente nas paredes e quinas do seu imóvel.</p>
+      <ul>
+        <li><strong>Acabamento Premium:</strong> Utilizamos MDF de altíssima qualidade e ferragens com amortecimento para garantir a durabilidade que o clima úmido de Recife exige.</li>
+        <li><strong>Design Único:</strong> Cada projeto é pensado de forma 100% personalizada. Desde os padrões de madeira até a iluminação embutida em LED.</li>
+        <li><strong>Praticidade no Dia a Dia:</strong> Seus armários e bancadas são desenvolvidos pensando na sua rotina, trazendo ergonomia e muito mais praticidade.</li>
+      </ul>
+      <p>Escolher a DOMUS como sua parceira para a criação de <strong>móveis planejados em Recife-PE</strong> significa ter a garantia de um projeto feito com maestria. Solicite um orçamento conosco e veja seu sonho sair do papel!</p>
+    `
+  },
+  {
+    slug: 'cozinhas-planejadas-recife-pe-tendencias',
+    title: 'Cozinhas Planejadas em Recife-PE: Tendências de Marcenaria',
+    excerpt: 'Quer renovar a casa? Conheça as principais tendências para cozinhas planejadas em Recife-PE. Dicas de materiais, cores e otimização inteligente de espaços com nossa marcenaria.',
+    date: '2023-11-25',
+    keywords: ['Cozinhas planejadas Recife-PE', 'Cozinha sob medida', 'Marceneiro em Recife-PE', 'Móveis planejados em Recife-PE', 'Reforma de cozinha'],
+    imageUrl: 'https://i.imgur.com/Tl5ECnh.jpeg',
+    content: `
+      <h2>O Coração da Casa: Cozinhas Planejadas em Recife-PE</h2>
+      <p>A cozinha é, sem dúvida, o ambiente mais valorizado e frequentado por famílias e amigos. Ter <strong>cozinhas planejadas em Recife-PE</strong> com um design moderno e altamente funcional deixou de ser um luxo para se tornar uma necessidade no dia a dia moderno.</p>
+
+      <h3>Tendências para Cozinhas Sob Medida</h3>
+      <p>Na DOMUS, especialista em <strong>móveis planejados em Recife-PE</strong>, observamos uma crescente demanda por projetos que integram as salas de estar com as cozinhas (conceito aberto). Aqui estão algumas tendências fortes na nossa <strong>marcenaria em Recife-PE</strong>:</p>
+      <ul>
+        <li><strong>Cores Neutras e Foscas:</strong> Padrões de MDF em tons de cinza, fendi e estilo industrial estão em alta. Combinam perfeitamente com pedras claras ou escurecidas nas bancadas.</li>
+        <li><strong>Ilhas e Penínsulas Integradas:</strong> Quando o espaço permite, criar uma ilha central com cooktop ou com espaço para refeições rápidas melhora a dinâmica da casa.</li>
+        <li><strong>Sistemas Inteligentes de Abertura:</strong> O sistema "fecho-toque" (push-to-open) dispensa puxadores externos, deixando as frentes do mobiliário minimalistas e limpas.</li>
+      </ul>
+      <p>Invista na cozinha dos seus sonhos com a DOMUS. Somos a escolha certa para criar <strong>cozinhas planejadas em Recife-PE</strong> que reúnem ergonomia, resistência à umidade e um visual de revista de decoração!</p>
+    `
+  },
+  {
+    slug: 'guarda-roupa-planejado-recife-pe-dicas',
+    title: 'Guarda-Roupa Planejado em Recife-PE: Como Projetar o Armário Perfeito',
+    excerpt: 'Saiba como projetar o guarda-roupa planejado perfeito no seu quarto em Recife-PE. Soluções em MDF, ferragens de alta qualidade e divisórias sob medida.',
+    date: '2023-11-30',
+    keywords: ['Guarda-roupa planejado Recife-PE', 'Armário sob medida', 'Quarto planejado Recife', 'Móveis planejados em Recife-PE', 'Marcenaria de luxo'],
+    imageUrl: 'https://i.imgur.com/EkA11bm.png',
+    content: `
+      <h2>Guarda-Roupa Planejado em Recife-PE: Organização e Estilo</h2>
+      <p>Projetar o quarto dos sonhos requer atenção a um item fundamental: o guarda-roupa. Ao optar por um <strong>guarda-roupa planejado em Recife-PE</strong> com a DOMUS, você transforma seu dormitório, maximizando cada espacinho com inteligência.</p>
+
+      <h3>A Importância do Divisor Interno Sob Medida</h3>
+      <p>A grande vantagem dos <strong>móveis planejados em Recife-PE</strong> é a possibilidade de projetar as divisórias de acordo com a quantidade de roupas, calçados e acessórios de cada pessoa. Nada de prateleiras inúteis e espaços perdidos.</p>
+      <ul>
+        <li><strong>Portas de Correr Modernas:</strong> Ideais para quartos mais compactos, elas podem receber espelhos para ampliar visualmente o ambiente e trazer muito mais luz.</li>
+        <li><strong>Cabideiros Basculantes e Calceiros:</strong> Soluções práticas e ergonômicas para quem precisa de organização total, de fácil alcance no seu guarda-roupa sob medida.</li>
+        <li><strong>Acabamentos Anti-mofo:</strong> Usamos chapas e ferragens ideais para o clima nordestino, aumentando a vida útil da sua marcenaria.</li>
+      </ul>
+      <p>Na DOMUS, garantimos os melhores projetos de <strong>móveis planejados em Recife-PE</strong>, garantindo não só um belo visual no seu quarto, como também qualidade, durabilidade impecável e precisão no orçamento e prazo de entrega.</p>
+    `
+  },
+  {
+    slug: 'moveis-planejados-para-escritorio-recife-pe',
+    title: 'Móveis Planejados para Escritório e Home Office em Recife-PE',
+    excerpt: 'Aumente sua produtividade! Projetos de móveis planejados em Recife-PE focados em ergonomia e design para escritórios corporativos e home office.',
+    date: '2023-12-05',
+    keywords: ['Móveis planejados para escritório em Recife-PE', 'Home Office planejado Recife', 'Marcenaria corporativa Recife-PE', 'Móveis sob medida Recife'],
+    imageUrl: 'https://i.imgur.com/ZXIaGh2.jpeg',
+    content: `
+      <h2>Equilíbrio e Foco: Móveis Planejados para Escritórios em Recife-PE</h2>
+      <p>A forma como você organiza e projeta seu local de trabalho interfere diretamente na sua saúde e rendimento. Escolher <strong>móveis planejados em Recife-PE</strong> focados no ambiente corporativo e de home office eleva seu nível de produtividade.</p>
+
+      <h3>Ergonomia e Conforto nas Mesas e Arquivos</h3>
+      <p>Muitas pessoas e empresas na capital e Região Metropolitana de Recife apostam nos móveis sob medida para criar estações de trabalho sofisticadas, modernas e que transmitam prestígio.</p>
+      <ul>
+        <li><strong>Mesas Sob Medida:</strong> Diferente do mobiliário pronto, a mesa com a altura ergonomicamente ideal, com passa-fios integrados e caixas de tomadas aparentes são sinônimo de excelência da nossa <strong>marcenaria em Recife-PE</strong>.</li>
+        <li><strong>Estantes e Nichos de Documentos:</strong> Deixe seu escritório muito mais elegante, ocultando a papelada e exibindo itens decorativos e diplomas.</li>
+        <li><strong>Recepções Impactantes:</strong> O cartão de visita da sua empresa! Produzimos balcões recepcionistas com design em MDF diferenciado, iluminação frontal de LED e acabamentos em vidro ou espelho (aproveitando também nossa expertise como vidraçaria).</li>
+      </ul>
+      <p>Quer construir ou reformar o escritório do seu negócio? Confie nos projetos 3D e nos <strong>móveis planejados em Recife-PE</strong> fabricados com excelência pela equipe de especialistas marceneiros da DOMUS. Nossos orçamentos são sem compromisso!</p>
+    `
+  },
+  {
+    slug: 'como-escolher-empresa-moveis-planejados-recife-pe',
+    title: 'Como Escolher a Melhor Empresa de Móveis Planejados em Recife-PE',
+    excerpt: 'Vai investir em marcenaria sob medida? Veja como selecionar a melhor empresa de móveis planejados em Recife-PE. Qualidade, projeto 3D e instalação.',
+    date: '2023-12-10',
+    keywords: ['Empresa de móveis planejados em Recife-PE', 'Melhor marcenaria de Recife', 'Marceneiro Recife-PE', 'Fábrica de móveis planejados Recife'],
+    imageUrl: 'https://i.imgur.com/T1TpkUC.jpeg',
+    content: `
+      <h2>Dicas para Selecionar a Melhor Empresa de Móveis Planejados em Recife-PE</h2>
+      <p>Contratar uma marcenaria pode gerar ansiedades sobre o acabamento e os prazos de entrega. Portanto, saber avaliar e selecionar a <strong>melhor empresa de móveis planejados em Recife-PE</strong> evita frustrações e garante a valorização do seu investimento.</p>
+
+      <h3>O Que Avaliar Antes da Contratação?</h3>
+      <p>O mercado é amplo e, na hora da escolha das empresas do segmento em Pernambuco, a DOMUS destaca-se com os seguintes diferenciais:</p>
+      <ul>
+        <li><strong>Apresentação do Projeto em 3D:</strong> Não compre "no escuro". Nossa proposta inclui desenhos detalhados dos seus <strong>móveis planejados em Recife-PE</strong> antes da fabricação. Você valida e faz todas as aprovações necessárias.</li>
+        <li><strong>Contrato Claro e Prazos Transparentes:</strong> A previsibilidade é a base da confiança. Todo cliente DOMUS sabe o cronograma da sua reforma e da produção na nossa marcenaria. Entrega pontual é a nossa assinatura.</li>
+        <li><strong>Fornecedores e Material Premium:</strong> Fique de olho na espessura do MDF, qualidade do acabamento interno, corrediças deslizantes telescópicas pesadas, rodízios reforçados e espelhos impecáveis. Aqui, nós utilizamos apenas matérias-primas de grandes e confiáveis fonecedores do país.</li>
+      </ul>
+      <p>Ao procurar uma empresa dedicada à excelência em <strong>móveis planejados em Recife-PE</strong>, aliando marcenaria refinada, vidraçaria, e projetos e reformas eficientes, lembre-se do nome: DOMUS. Entre em contato para transformar sua casa e a sua vida!</p>
+    `
   }
 ];
