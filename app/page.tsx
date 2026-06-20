@@ -136,7 +136,7 @@ export default function Home() {
               <div className="services-grid">
                   
                   {/* Service Card 1: Vidraçaria */}
-                  <Link href="/contato?servico=Vidraçaria" className="home-service-card reveal" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                  <Link href="/contato?servico=Vidraçaria" className="home-service-card reveal" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <div className="icon-box"><i className="fas fa-layer-group"></i></div>
                       <h3>Vidraçaria</h3>
                       <ul className="home-service-list">
@@ -148,7 +148,7 @@ export default function Home() {
                   </Link>
 
                   {/* Service Card 2: Móveis Planejados */}
-                  <Link href="/contato?servico=Móveis%20Planejados" className="home-service-card reveal" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                  <Link href="/contato?servico=Móveis%20Planejados" className="home-service-card reveal" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <div className="icon-box"><i className="fas fa-couch"></i></div>
                       <h3>Móveis Planejados</h3>
                       <ul className="home-service-list">
@@ -160,7 +160,7 @@ export default function Home() {
                   </Link>
 
                   {/* Service Card 3: Climatização */}
-                  <Link href="/contato?servico=Climatização" className="home-service-card reveal" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                  <Link href="/contato?servico=Climatização" className="home-service-card reveal" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <div className="icon-box"><i className="fas fa-snowflake"></i></div>
                       <h3>Climatização</h3>
                       <ul className="home-service-list">
@@ -172,7 +172,7 @@ export default function Home() {
                   </Link>
 
                   {/* Service Card 4: Projetos e Reformas */}
-                  <Link href="/contato?servico=Reforma" className="home-service-card reveal" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                  <Link href="/contato?servico=Reforma" className="home-service-card reveal" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <div className="icon-box"><i className="fas fa-hard-hat"></i></div>
                       <h3>Projetos e Reformas Completas</h3>
                       <ul className="home-service-list">
@@ -229,30 +229,30 @@ export default function Home() {
           </div>
       </section>
 
-      <section id="galeria" style={{ display: 'flex', width: '100%', overflow: 'hidden' }}>
-          <div className="gallery-item" style={{ flex: 1, minWidth: '25%', height: '350px' }}>
-              <img src="https://i.imgur.com/OzJsv4o.png" alt="Projeto 1" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+      <section id="galeria" className="gallery-grid">
+          <div className="gallery-item">
+              <img src="https://i.imgur.com/OzJsv4o.png" alt="Projeto 1" />
               <div className="gallery-overlay">
                   <h4 style={{ fontSize: '1.2rem' }}>Portas Pivotantes</h4>
                   <p style={{ fontSize: '0.9rem' }}>Vidros temperados</p>
               </div>
           </div>
-          <div className="gallery-item" style={{ flex: 1, minWidth: '25%', height: '350px' }}>
-              <img src="https://i.imgur.com/I71dlg3.png" alt="Projeto 2" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          <div className="gallery-item">
+              <img src="https://i.imgur.com/I71dlg3.png" alt="Projeto 2" />
               <div className="gallery-overlay">
                   <h4 style={{ fontSize: '1.2rem' }}>Escritório</h4>
                   <p style={{ fontSize: '0.9rem' }}>Reforma Completa</p>
               </div>
           </div>
-          <div className="gallery-item" style={{ flex: 1, minWidth: '25%', height: '350px' }}>
-              <img src="https://i.imgur.com/hC5oegz.png" alt="Projeto 3" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          <div className="gallery-item">
+              <img src="https://i.imgur.com/hC5oegz.png" alt="Projeto 3" />
               <div className="gallery-overlay">
                   <h4 style={{ fontSize: '1.2rem' }}>Climatização</h4>
                   <p style={{ fontSize: '0.9rem' }}>Manutenção preventiva</p>
               </div>
           </div>
-          <div className="gallery-item" style={{ flex: 1, minWidth: '25%', height: '350px' }}>
-              <img src="https://i.imgur.com/SlbEPlj.png" alt="Projeto 4" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          <div className="gallery-item">
+              <img src="https://i.imgur.com/SlbEPlj.png" alt="Projeto 4" />
               <div className="gallery-overlay">
                   <h4 style={{ fontSize: '1.2rem' }}>Banheiros</h4>
                   <p style={{ fontSize: '0.9rem' }}>Box e Espelhos</p>
